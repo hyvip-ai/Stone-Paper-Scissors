@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #0a3d62; */
+    color: white;
+    text-align: center;
+}
+body{
+    background-color: #2b4162;
+background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+height: 100vh;
+overflow: hidden;
+}
+.main{
+
+    display: none;
+}
+.main .row{
+    height: 100%;
+    width: 100%;
+}
+.main .row .col-5{
+    height: 100%;
+   
+}
+.main .row .col-5 img{
+    height: 100%;
+    width: 100%;
+ animation-name: updown;
+ animation-timing-function: ease-in-out;
+ animation-duration: 1s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate; 
+ animation-play-state: running;
+    object-fit: cover;
+}
+#minediv{
+    transform: rotateY(180deg);
+    transform-box: fill-box;
+    animation-name: updown1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+    animation-play-state: running;
+       object-fit: cover;
+}
+.buttons{
+    margin-top: 50px;
+    display: none;
+}
+.score{
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.main button{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.buttons button{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.games{
+    margin-top: 50px;
+}
+.games button{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#rock{
+    position: relative;
+    z-index: 5;
+}
+#scissors{
+    position: relative;
+    z-index: 5; 
+}
+
+@keyframes updown{
+    from{
+        transform: rotate(60deg);
+    }
+    to{
+        transform: rotate(30px);
+
+    }
+}
+@keyframes updown1{
+    from{
+        transform: rotate3D(60deg);
+    }
+    to{
+        transform: rotate3D(30px);
+
+    }
+}
+.main .row .col-2 p{
+    display: block;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
